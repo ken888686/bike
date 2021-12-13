@@ -13,14 +13,14 @@
 
 ### 六角學院
 
-- [figma-自行車道地圖資訊整合網](https://www.figma.com/file/lguo4e9pNw7y7ZZ9zzzA3D)
-- [Yun](https://2021.thef2e.com/users/6296432819610583289)
+- [figma-自行車道地圖資訊整合網](https://www.figma.com/file/TbGIzJq0BU1DvUDrphrcWl)
+- [Shiaohan](https://2021.thef2e.com/users/6296427084285739387)
 - [Bootstrap 5](https://bootstrap5.hexschool.com/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 ### 其他資源
 
-- [Vite](https://github.com/vitejs/vite)
+- [Vue CLI](https://cli.vuejs.org/zh/)
 - [vue-router](https://github.com/vuejs/vue-router)
 - [vue3-openlayers](https://github.com/MelihAltintas/vue3-openlayers)
 - [vue-leaflet](https://github.com/vue-leaflet/vue-leaflet)
@@ -36,9 +36,9 @@
 
 - [Deploy to Github Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
 
-## Vue 3 + Vite
+### Customize configuration
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Recommended IDE Setup
 
