@@ -1,17 +1,15 @@
 <template>
   <div class="home container">
-    <button class="btn btn-outline-primary btn-header">
-      <i class="fas fa-bicycle" />
-      找單車
-    </button>
+    <StationInfo />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import StationInfo from '@/components/StationInfo.vue';
+</script>
 
 <style lang="scss" scoped>
 .home {
-  text-align: center;
   border: 1px solid black;
 }
 </style>

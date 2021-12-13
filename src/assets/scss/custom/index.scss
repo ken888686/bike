@@ -77,3 +77,14 @@
     border-color: $gray-100;
   }
 }
+
+.station-card {
+  border: 1px solid $primary;
+  width: 361px;
+  height: 176px;
+
+  &-title {
+    color: $green-500;
+    font-weight: $font-weight-bold;
+  }
+}
