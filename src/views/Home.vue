@@ -1,15 +1,13 @@
 <template>
   <div class="home container">
-    <Distance :distance="distance" />
-    <Distance :distance="1234" />
+    <button class="btn btn-outline-primary btn-header">
+      <i class="fas fa-bicycle" />
+      找單車
+    </button>
   </div>
 </template>
 
-<script setup>
-import Distance from '@/components/Distance.vue';
-
-const distance = 1032;
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .home {
