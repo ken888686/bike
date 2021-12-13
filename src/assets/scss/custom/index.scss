@@ -1,0 +1,32 @@
+.quantity-card {
+  display: inline-block;
+  width: 170px;
+  height: 72px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  .quantity-title {
+    margin-left: 4px;
+    font-size: $font-size-sm;
+  }
+
+  .quantity-value {
+    text-align: center;
+    font-size: $h4-font-size;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.bg-green-100 {
+  background-color: $green-100;
+  color: $green-500;
+}
+.bg-alert-100 {
+  background-color: $red-100;
+  color: $red-600;
+}
+.bg-disabled-200 {
+  background-color: $gray-200;
+  color: $gray-400;
+}

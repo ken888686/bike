@@ -16,7 +16,7 @@
 - [figma-自行車道地圖資訊整合網](https://www.figma.com/file/TbGIzJq0BU1DvUDrphrcWl)
 - [Shiaohan](https://2021.thef2e.com/users/6296427084285739387)
 - [Bootstrap 5](https://bootstrap5.hexschool.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ### 其他資源
 
