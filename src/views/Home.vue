@@ -1,22 +1,15 @@
-<script setup>
-import Banner from "@/components/Banner.vue";
-import Buttons from "@/components/Buttons.vue";
-import NewsList from "@/components/NewsList.vue";
-import Footer from "@/components/Footer.vue";
-</script>
-
 <template>
-  <Banner />
-  <div class="container">
-    <Buttons />
-
-    <h2 class="h2 fw-bold text-center">最新公告</h2>
-    <NewsList />
-    <div class="text-center py-3">
-      <a href="/news" class="btn btn-primary">更多最新公告</a>
-    </div>
-    <!-- <NewsList />
-    <Activities /> -->
+  <div class="home container">
+    <StationInfo />
   </div>
 </template>
-<style></style>
+
+<script setup>
+import StationInfo from '@/components/StationInfo.vue';
+</script>
+
+<style lang="scss" scoped>
+.home {
+  border: 1px solid black;
+}
+</style>

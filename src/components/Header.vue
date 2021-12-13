@@ -1,105 +1,56 @@
-<script setup>
-</script>
-
 <template>
-  <nav class="navbar navbar-expand-lg py-0 sticky-top bg-white shadow-sm">
-    <div class="container-fluid">
-      <router-link class="navbar-brand p-0" to="/">
-        <img src="/img/logo.svg" alt="logo" />
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container">
+      <router-link
+        class="navbar-brand"
+        to="/"
+      >
+        <img
+          src="@/assets/logo-light.png"
+          alt="Logo"
+        >
       </router-link>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span>
-          <BootstrapIcon icon="list" />
-        </span>
+        <span class="navbar-toggler-icon" />
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item mx-2 dropdown">
-            <a
-              class="
-                nav-link
-                link-dark
-                border-bottom border-2 border-primary
-                px-0
-              "
-              href="/news"
-              id="newsDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+      <div
+        id="navbarNav"
+        class="collapse navbar-collapse"
+      >
+        <ul class="navbar-nav ms-auto row gx-2 align-items-center">
+          <li class="nav-item col-auto">
+            <router-link
+              to="/"
+              class="btn btn-outline-primary btn-header"
             >
-              最新消息
-            </a>
-            <ul
-              class="
-                dropdown-menu dropdown-menu-primary
-                start-50
-                translate-middle-x
-                mt-2
-              "
-              aria-labelledby="newsDropdownMenuLink"
-            >
-              <li>
-                <router-link class="dropdown-item" to="/news">
-                  最新公告
-                </router-link>
-              </li>
-              <li class="dropdown-item"><div class="divider"></div></li>
-              <li>
-                <router-link class="dropdown-item" to="activities">
-                  活動資訊
-                </router-link>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item mx-2">
-            <router-link class="nav-link link-dark px-0" to="bike-map">
-              自行車路線
+              <i class="fas fa-bicycle" />
+              找單車
             </router-link>
           </li>
-          <li class="nav-item mx-2 dropdown">
-            <a
-              class="
-                nav-link
-                link-dark
-                border-bottom border-2 border-primary
-                px-0
-              "
-              href="/bike-rent"
-              id="bikeRentDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+          <li class="nav-item col-auto">
+            <router-link
+              to="/"
+              class="btn btn-outline-primary btn-header"
             >
-              單車租借
-            </a>
-            <ul
-              class="
-                dropdown-menu dropdown-menu-primary
-                start-50
-                translate-middle-x
-                mt-2
-              "
-              aria-labelledby="bikeRentDropdownMenuLink"
-            >
-              <li>
-                <router-link class="dropdown-item" to="bike-rent">
-                  單車租借
-                </router-link>
-              </li>
-            </ul>
+              <i class="fas fa-route" />
+              找路線
+            </router-link>
           </li>
-          <li class="nav-item mx-2">
-            <router-link class="nav-link link-dark px-0" to="/notify">
-              騎乘小叮嚀
+          <li class="nav-item col-auto">
+            <router-link
+              to="/"
+              class="btn btn-outline-primary btn-header"
+            >
+              <i class="fas fa-umbrella-beach" />
+              找景點
             </router-link>
           </li>
         </ul>
@@ -108,5 +59,4 @@
   </nav>
 </template>
 
-<style scoped>
-</style>
+<script setup></script>
