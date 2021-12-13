@@ -1,7 +1,7 @@
 <template>
   <div
     class="state"
-    :class="status"
+    :class="`state-${status}`"
   >
     {{ title }}
   </div>
@@ -27,7 +27,7 @@ const props = defineProps({
 let status = '';
 function getStatus() {
   if (!props.isAvailable) {
-    status = 'state-disabled';
+    status = 'disabled';
     return '站點施工中';
   }
 
@@ -35,14 +35,16 @@ function getStatus() {
     return '可借可還';
   }
   if (props.rent === 0 && props.parkingSpace > 0) {
-    status = 'state-limited';
+    status = 'limited';
     return '只可停車';
   }
   if (props.rent > 0 && props.parkingSpace === 0) {
-    status = 'state-limited';
+    status = 'limited';
     return '只可借車';
   }
-  return 'None';
+
+  status = 'disabled';
+  return '無車無位';
 }
 
 const title = getStatus();
