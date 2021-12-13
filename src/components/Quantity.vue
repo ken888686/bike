@@ -1,10 +1,13 @@
 <template>
-  <div class="quantity-card bg-disabled-200">
+  <div
+    class="quantity-card"
+    :class="`quantity-card-${status}`"
+  >
     <div class="d-flex justify-content-center align-items-center text-center">
       <i :class="iconName" />
-      <span class="quantity-title"> {{ props.title }} </span>
+      <span class="quantity-card-title"> {{ props.title }} </span>
     </div>
-    <div class="quantity-value">
+    <div class="quantity-card-value">
       {{ quantity }}
     </div>
   </div>
@@ -15,7 +18,7 @@ import { defineProps } from 'vue';
 const props = defineProps({
   title: {
     type: String,
-    default: '標題',
+    default: 'title',
   },
   icon: {
     type: String,
@@ -25,9 +28,22 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+  isAvailable: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const iconName = `fas fa-${props.icon}`;
-</script>
 
-<style lang="scss"></style>
+function getStatus() {
+  if (props.quantity === 0 || !props.isAvailable) {
+    return 'disabled';
+  }
+  if (props.quantity <= 5) {
+    return 'limited';
+  }
+  return '';
+}
+const status = getStatus();
+</script>

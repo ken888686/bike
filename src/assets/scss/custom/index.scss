@@ -5,28 +5,48 @@
   border-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
+  background-color: $green-100;
+  color: $green-500;
 
-  .quantity-title {
+  &-title {
     margin-left: 4px;
     font-size: $font-size-sm;
   }
 
-  .quantity-value {
+  &-value {
     text-align: center;
     font-size: $h4-font-size;
     font-weight: $font-weight-bold;
   }
+
+  &-limited {
+    background-color: $red-100;
+    color: $red-600;
+  }
+
+  &-disabled {
+    background-color: $gray-200;
+    color: $gray-400;
+  }
 }
 
-.bg-green-100 {
-  background-color: $green-100;
-  color: $green-500;
-}
-.bg-alert-100 {
-  background-color: $red-100;
-  color: $red-600;
-}
-.bg-disabled-200 {
-  background-color: $gray-200;
-  color: $gray-400;
+.state {
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 6px 12px;
+  background-color: $gray-100;
+  font-size: $font-size-sm;
+  border-color: $orange-300;
+  color: $orange-500;
+
+  &-limited {
+    border-color: $red-300;
+    color: $red-400;
+  }
+
+  &-disabled {
+    border-color: $gray-300;
+    color: $gray-400;
+  }
 }
