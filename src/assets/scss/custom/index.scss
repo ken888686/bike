@@ -79,12 +79,22 @@
 }
 
 .station-card {
-  border: 1px solid $primary;
+  border-bottom: 1px solid $gray-300;
   width: 361px;
   height: 176px;
+  display: inline-block;
 
   &-title {
     color: $green-500;
     font-weight: $font-weight-bold;
+    margin-bottom: 8px;
+  }
+
+  &-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
   }
 }
