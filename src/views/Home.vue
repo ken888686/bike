@@ -1,11 +1,11 @@
 <template>
   <div class="home container">
-    <StationInfo />
+    <SearchGroup />
   </div>
 </template>
 
 <script setup>
-import StationInfo from '@/components/StationInfo.vue';
+import SearchGroup from '@/components/SearchGroup.vue';
 </script>
 
 <style lang="scss" scoped>
