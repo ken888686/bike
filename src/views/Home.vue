@@ -1,7 +1,7 @@
 <template>
-  <Map />
+  <SearchList />
 </template>
 
 <script setup>
-import Map from '@/components/Map.vue';
+import SearchList from '@/components/SearchList.vue';
 </script>
