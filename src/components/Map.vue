@@ -19,5 +19,3 @@ const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">O
 const zoom = 8;
 const center = [23.97565, 120.9738819];
 </script>
-
-<style lang="scss" scoped></style>
