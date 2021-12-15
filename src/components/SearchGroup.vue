@@ -19,6 +19,7 @@ import SearchInput from './SearchInput.vue';
 }
 
 .search-group {
-  padding: 28px 32px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 </style>

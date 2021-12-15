@@ -79,6 +79,7 @@
 
 .station-card {
   border-bottom: 1px solid $gray-300;
+  margin-bottom: 21px;
   width: 361px;
   height: 176px;
   display: inline-block;
@@ -123,4 +124,13 @@
   .btn {
     color: $gray-500;
   }
+}
+
+.search-list {
+  width: 425px;
+  background-color: $gray-100;
+  box-shadow: 4px 4px 20px rgba(118, 118, 118, 0.3);
+  border-radius: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
