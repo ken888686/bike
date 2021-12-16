@@ -3,6 +3,7 @@
     class="h-100"
     :zoom="zoom"
     :center="center"
+    :options="{ zoomControl: false }"
   >
     <l-tile-layer
       :url="url"

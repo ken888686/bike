@@ -1,5 +1,8 @@
 <template>
-  <div class="input-group">
+  <div
+    class="input-group"
+    :class="{ 'input-group-focus': isFocus }"
+  >
     <input
       type="text"
       class="form-control border-0 bg-transparent"
@@ -19,8 +22,10 @@
   </div>
 </template>
 <script setup>
-let isFocus = false;
+import { ref } from 'vue';
+
+const isFocus = ref(false);
 function setFocus() {
-  isFocus = !isFocus;
+  isFocus.value = !isFocus.value;
 }
 </script>
