@@ -1,7 +1,7 @@
 <template>
-  <SearchList />
+  <SearchPanel />
 </template>
 
 <script setup>
-import SearchList from '@/components/SearchList.vue';
+import SearchPanel from '@/components/SearchPanel.vue';
 </script>

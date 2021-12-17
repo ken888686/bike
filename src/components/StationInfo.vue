@@ -1,30 +1,30 @@
 <template>
   <div class="station-card">
     <h5 class="station-card-title">
-      {{ props.title }}
+      {{ title }}
     </h5>
     <div class="d-flex justify-content-between align-items-center">
       <Quantity
         title="可租借"
-        :quantity="props.rent"
+        :quantity="rent"
       />
       <Quantity
         title="可停車"
-        :quantity="props.parkingSpace"
+        :quantity="parkingSpace"
         icon="parking"
       />
     </div>
     <div class="station-card-status">
       <State
-        :rent="props.rent"
-        :parkingSpace="props.parkingSpace"
+        :rent="rent"
+        :parkingSpace="parkingSpace"
       />
-      <Distance :distance="props.distance" />
+      <Distance :distance="distance" />
     </div>
   </div>
 </template>
 <script setup>
-import { defineProps } from 'vue';
+import { ref, defineProps } from 'vue';
 import Quantity from './Quantity.vue';
 import State from './State.vue';
 import Distance from './Distance.vue';
@@ -47,4 +47,9 @@ const props = defineProps({
     default: 0,
   },
 });
+
+const title = ref(props.title);
+const rent = ref(props.rent);
+const parkingSpace = ref(props.parkingSpace);
+const distance = ref(props.distance);
 </script>

@@ -6,20 +6,23 @@
     <div class="search-list-result">
       <StationInfo
         v-for="station in stations"
-        :key="station.stationUID"
-        :title="station.stationName.tw"
+        :key="station.uid"
+        :title="station.name.tw"
+        :rent="50"
+        :parkingSpace="10"
       />
     </div>
   </div>
 </template>
 <script setup>
 import { ref } from 'vue';
-import * as Bike from '@/services/bike';
+import * as BikeService from '@/services/bike';
 import SearchGroup from './SearchGroup.vue';
 import StationInfo from './StationInfo.vue';
 
 const stations = ref([]);
-Bike.getStation('taipei', { $top: 5 }).then((res) => {
+BikeService.getStationInfoList('taipei', { $top: 5 }).then((res) => {
+  // console.log(res);
   stations.value = res;
 });
 </script>
