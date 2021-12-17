@@ -1,0 +1,20 @@
+.state {
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 6px 12px;
+  background-color: $gray-100;
+  font-size: $font-size-sm;
+  border-color: $orange-300;
+  color: $orange-500;
+
+  &-limited {
+    border-color: $red-300;
+    color: $red-400;
+  }
+
+  &-disabled {
+    border-color: $gray-300;
+    color: $gray-400;
+  }
+}

@@ -1,0 +1,26 @@
+.input-group {
+  border-radius: $btn-border-radius;
+  background-color: $gray-200;
+  & > * {
+    transition: $transition-base;
+  }
+
+  .form-control:focus,
+  .btn:focus {
+    box-shadow: none;
+  }
+
+  &-focus {
+    outline: 2px solid $green-300;
+  }
+
+  .form-control {
+    font-size: 12px;
+    color: $gray-500;
+    padding: 9px 20px;
+  }
+
+  .btn {
+    color: $gray-500;
+  }
+}

@@ -1,0 +1,20 @@
+.station-card {
+  border-bottom: 1px solid $gray-300;
+  margin-bottom: 21px;
+  width: 361px;
+  display: inline-block;
+
+  &-title {
+    color: $green-500;
+    font-weight: $font-weight-bold;
+    margin-bottom: 8px;
+  }
+
+  &-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
